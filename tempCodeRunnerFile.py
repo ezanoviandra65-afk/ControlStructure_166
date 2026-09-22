@@ -1,6 +1,12 @@
-n = int(input("Enter n: "))
+percentage = float(input("Enter student's percentage: "))
 
-for i in range(1, n + 1):
-    for j in range(i):
-        print(i, end=" ")
-    print()
+if percentage >= 90:
+    print("Excellent performance")
+elif percentage >= 80:
+    print("Very Good performance")
+elif percentage >= 70:
+    print("Good performance")
+elif percentage >= 60:
+    print("Average performance")
+else:
+    print("Below Average performance")
